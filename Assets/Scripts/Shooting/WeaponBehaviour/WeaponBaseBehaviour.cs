@@ -12,8 +12,13 @@ public abstract class WeaponBaseBehaviour : MonoBehaviour
 
     public abstract void Fire(Vector3 firePoint);
 
-    protected virtual bool CanFire() 
+    public virtual bool CanFire() 
     {
         return Time.time >= nextTimeFire;
+    }
+
+    protected  void SetNextFireTime()
+    {
+        nextTimeFire = Time.time + fireRate;
     }
 }

@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerShootingController : MonoBehaviour
 {
     WeaponBaseBehaviour weapon;
 
+    [SerializeField]
+    Transform gun;
     
 
     private void Awake()
@@ -16,9 +16,9 @@ public class PlayerShootingController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if(Input.GetButton("Jump"))
+         if(Input.GetButton("Jump") && weapon.CanFire())
          {
-             weapon.Fire();
+            weapon.Fire(gun.position);
          }
     }
 }

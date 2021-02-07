@@ -17,9 +17,11 @@ public class ShotShellBehaviour : WeaponBaseBehaviour
         {
             float _degrees = _fraction * i - (angleRange / 2) + (_fraction / 2);
             float _radians = Mathf.Deg2Rad * _degrees;
-            Vector3 _direction = transform.rotation * new Vector3(Mathf.Sin(_radians), 0, Mathf.Cos(_radians));
+            Vector3 _direction = transform.rotation * new Vector3(Mathf.Sin(_radians), Mathf.Cos(_radians), 0);
             var _bullet = GameObject.Instantiate(bulletPrefab, transform.position, Quaternion.Euler(_direction));
             _bullet.Launch(_direction.normalized);
         }
+
+        SetNextFireTime();
     }
 }
