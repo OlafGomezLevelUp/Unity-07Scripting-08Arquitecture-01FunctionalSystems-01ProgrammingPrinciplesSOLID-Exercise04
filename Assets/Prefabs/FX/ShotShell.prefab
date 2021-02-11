@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: -2499120206891528116}
   - component: {fileID: -4342650037098325937}
   - component: {fileID: 7810872297695240}
+  - component: {fileID: 495508844984749996}
+  - component: {fileID: 7246871379146955340}
   m_Layer: 0
   m_Name: ShotShell
   m_TagString: Untagged
@@ -105,6 +107,31 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &495508844984749996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee4e37d91d267346a4ebb39de2a7a79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+--- !u!114 &7246871379146955340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32db591c44b0047459c3c4e5891dc50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0

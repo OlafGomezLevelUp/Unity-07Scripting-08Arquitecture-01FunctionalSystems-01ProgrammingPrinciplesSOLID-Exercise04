@@ -38,7 +38,7 @@ public class SpawnController : MonoBehaviour
             yield return null;
         }
 
-        GameObject _go = spawningBehaviour.SpawnEnemy(enemies[_selection]);
+        GameObject _go = spawningBehaviour.SpawnObject(enemies[_selection]);
         StartCoroutine(DoCreateEnemy());
     }
 }

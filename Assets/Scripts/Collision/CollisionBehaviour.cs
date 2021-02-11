@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletCollisionBehaviour : MonoBehaviour
+public class CollisionBehaviour : MonoBehaviour
 {
-    public event Action Enter;
+    public event Action<GameObject> Enter;
 
     [SerializeField]
     LayerMask collisionLayer;
@@ -14,14 +14,14 @@ public class BulletCollisionBehaviour : MonoBehaviour
     {
         if(ContainsLayer(other.gameObject.layer))
         {
-            OnEnter();
+            OnEnter(other.gameObject);
         }
     }
 
     bool ContainsLayer(int layer) => collisionLayer == (collisionLayer | (1 << layer));
 
-    void OnEnter()
+    void OnEnter(GameObject target)
     {
-        Enter?.Invoke();
+        Enter?.Invoke(target);
     }
 }
