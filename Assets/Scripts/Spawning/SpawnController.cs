@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnController : MonoBehaviour
 {
     [SerializeField]
-    List<GameObject> enemies = new List<GameObject>();
+    List<GameObject> spawnObjects = new List<GameObject>();
 
     [SerializeField]
     float spawningRate;
@@ -28,7 +28,7 @@ public class SpawnController : MonoBehaviour
 
     IEnumerator DoCreateEnemy()
     {
-        var _selection = Random.Range(0, enemies.Count);
+        var _selection = Random.Range(0, spawnObjects.Count);
         float lastSpawn = 0;
 
         while (spawningRate >  lastSpawn)
@@ -38,7 +38,7 @@ public class SpawnController : MonoBehaviour
             yield return null;
         }
 
-        GameObject _go = spawningBehaviour.SpawnObject(enemies[_selection]);
+        GameObject _go = spawningBehaviour.SpawnObject(spawnObjects[_selection]);
         StartCoroutine(DoCreateEnemy());
     }
 }

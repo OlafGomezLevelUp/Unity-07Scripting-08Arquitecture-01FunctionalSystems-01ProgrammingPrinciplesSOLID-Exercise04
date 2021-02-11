@@ -98,9 +98,10 @@ GameObject:
   - component: {fileID: 6304884537340779202}
   - component: {fileID: -8941508846325883233}
   - component: {fileID: 6295156045698395555}
-  - component: {fileID: -1702953966653538642}
-  - component: {fileID: 5170746790274923308}
-  - component: {fileID: -9109436218489510443}
+  - component: {fileID: -6631999226446338630}
+  - component: {fileID: 5207829436433040925}
+  - component: {fileID: -2746996327889393242}
+  - component: {fileID: 1386621279306856759}
   m_Layer: 6
   m_Name: Enemy2
   m_TagString: Untagged
@@ -228,7 +229,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 2
---- !u!114 &-1702953966653538642
+--- !u!114 &-6631999226446338630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78fa766b2f056e1409edf4ff17f99062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5207829436433040925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dieFX: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 3}
---- !u!114 &5170746790274923308
+--- !u!114 &-2746996327889393242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061a328f60d0a734197a9f12eccbdbd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-9109436218489510443
+--- !u!114 &1386621279306856759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,9 +275,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 178266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78fa766b2f056e1409edf4ff17f99062, type: 3}
+  m_Script: {fileID: 11500000, guid: 093d42f806e9d8a42ac650449e507bc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyScoreValue: 20
 --- !u!1001 &93743184846945690
 PrefabInstance:
   m_ObjectHideFlags: 0

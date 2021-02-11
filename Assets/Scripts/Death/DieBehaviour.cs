@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class EnemyDieBehaviour : MonoBehaviour
+
+public class DieBehaviour : MonoBehaviour
 {
     [SerializeField]
     GameObject dieFX;

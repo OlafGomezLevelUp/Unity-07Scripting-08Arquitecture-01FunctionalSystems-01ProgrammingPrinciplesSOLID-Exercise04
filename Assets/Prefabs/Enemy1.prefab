@@ -98,9 +98,10 @@ GameObject:
   - component: {fileID: 7547007541565966520}
   - component: {fileID: -4657546968390829782}
   - component: {fileID: 1920123301767047024}
-  - component: {fileID: -8546074103422746898}
-  - component: {fileID: 6056408429901067363}
-  - component: {fileID: 5286290080222958699}
+  - component: {fileID: -941982752932281186}
+  - component: {fileID: -8179971951435953227}
+  - component: {fileID: -4440269518701951347}
+  - component: {fileID: 8665209288777076051}
   m_Layer: 6
   m_Name: Enemy1
   m_TagString: Untagged
@@ -228,7 +229,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e061cbb629468724b9e02425670e1a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-8546074103422746898
+--- !u!114 &-941982752932281186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78fa766b2f056e1409edf4ff17f99062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8179971951435953227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dieFX: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 3}
---- !u!114 &6056408429901067363
+--- !u!114 &-4440269518701951347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061a328f60d0a734197a9f12eccbdbd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5286290080222958699
+--- !u!114 &8665209288777076051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,9 +275,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 178266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78fa766b2f056e1409edf4ff17f99062, type: 3}
+  m_Script: {fileID: 11500000, guid: 093d42f806e9d8a42ac650449e507bc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyScoreValue: 10
 --- !u!1001 &93743184846945690
 PrefabInstance:
   m_ObjectHideFlags: 0

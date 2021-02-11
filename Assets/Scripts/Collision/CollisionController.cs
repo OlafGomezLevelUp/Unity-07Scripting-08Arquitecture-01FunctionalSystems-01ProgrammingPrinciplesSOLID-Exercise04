@@ -9,6 +9,7 @@ public class CollisionController : MonoBehaviour
     CollisionBehaviour bulletCollisionBehaviour;
     DamageBehaviour damageBehaviour;
 
+
     private void Awake() {
         bulletCollisionBehaviour = GetComponent<CollisionBehaviour>();
         damageBehaviour = GetComponent<DamageBehaviour>();

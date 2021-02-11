@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollisionBehaviour : MonoBehaviour
+public class CollisionBehaviour : MonoBehaviour, ILayerChecker
 {
     public event Action<GameObject> Enter;
 
@@ -18,10 +18,12 @@ public class CollisionBehaviour : MonoBehaviour
         }
     }
 
-    bool ContainsLayer(int layer) => collisionLayer == (collisionLayer | (1 << layer));
+   
 
     void OnEnter(GameObject target)
     {
         Enter?.Invoke(target);
     }
+
+   public bool ContainsLayer(int layer) => collisionLayer == (collisionLayer | (1 << layer));
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 public class MissileBulletBehaviour : BulletBase
 {
     [SerializeField]
-    float turnSpeed = 10;
+    float turnSpeed = 10f;
     Transform target;
     public override void Launch()
     {

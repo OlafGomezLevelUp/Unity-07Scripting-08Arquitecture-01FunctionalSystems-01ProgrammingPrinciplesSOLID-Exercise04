@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MovementBehaviour : MonoBehaviour
@@ -15,5 +13,10 @@ public class MovementBehaviour : MonoBehaviour
     public void VerticalMovement()
     {
         transform.position += transform.up * speed * Time.deltaTime;
+    }
+
+    public void VerticalMovementVector()
+    {
+        transform.position += Vector3.up * speed * Time.deltaTime;
     }
 }

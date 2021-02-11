@@ -6,7 +6,7 @@ public class HealthBehaviour : MonoBehaviour
     public event Action Dead;
 
     [SerializeField]
-    float maxHealth;
+    protected float maxHealth;
 
     protected float currentHealth;
 
@@ -26,9 +26,10 @@ public class HealthBehaviour : MonoBehaviour
     {
         if(currentHealth < maxHealth)
         {
-            currentHealth = Math.Min(currentHealth + value , 0);
+           ApplyHeal(value);
         }
     }
+
 
     protected virtual void ApplyDamage(float value)
     {
@@ -37,11 +38,13 @@ public class HealthBehaviour : MonoBehaviour
 
     protected virtual void ApplyHeal(float value)
     {
-        currentHealth = Math.Min(currentHealth + value , 0);
+        currentHealth = Math.Min(currentHealth + value , maxHealth);
     }
 
     void OnDead() 
     {
         Dead?.Invoke();
     }
+
+   
 }
